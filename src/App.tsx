@@ -34,9 +34,9 @@ export default function App() {
     if (saved) {
       const parsed = JSON.parse(saved) as PortfolioData;
       // Migration: Ensure all experiences have correct periods for known orgs
-      if (parsed.name === "이름") parsed.name = "최준혁";
-      if (parsed.contact === "010-0000-0000 / email@example.com") {
-        parsed.contact = "010-0000-0000 / 12midmo0@gmail.com";
+      if (parsed.name === "이름" || parsed.name === "최준혁") parsed.name = "조수빈";
+      if (parsed.contact === "010-0000-0000 / email@example.com" || parsed.contact === "010-0000-0000 / 12midmo0@gmail.com") {
+        parsed.contact = "010-0000-0000 / pearl8669@naver.com";
       }
 
       parsed.experiences = parsed.experiences.map(exp => {
