@@ -13,7 +13,6 @@ import {
   Award, 
   ChevronRight, 
   Mail, 
-  Phone, 
   CheckCircle2, 
   X,
   Settings,
@@ -35,8 +34,8 @@ export default function App() {
       const parsed = JSON.parse(saved) as PortfolioData;
       // Migration: Ensure all experiences have correct periods for known orgs
       if (parsed.name === "이름" || parsed.name === "최준혁") parsed.name = "조수빈";
-      if (parsed.contact === "010-0000-0000 / email@example.com" || parsed.contact === "010-0000-0000 / 12midmo0@gmail.com") {
-        parsed.contact = "010-0000-0000 / pearl8669@naver.com";
+      if (parsed.contact === "010-0000-0000 / email@example.com" || parsed.contact === "010-0000-0000 / 12midmo0@gmail.com" || parsed.contact === "010-0000-0000 / pearl8669@naver.com") {
+        parsed.contact = "pearl8669@naver.com";
       }
 
       parsed.experiences = parsed.experiences.map(exp => {
@@ -469,7 +468,7 @@ export default function App() {
                           />
                         </div>
                         <div className="space-y-2">
-                          <label className="text-xs font-bold text-slate-500 ml-1">Contact</label>
+                          <label className="text-xs font-bold text-slate-500 ml-1">Email</label>
                           <input 
                             type="text" 
                             value={data.contact}

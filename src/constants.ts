@@ -2,7 +2,7 @@ import { PortfolioData } from "./types";
 
 export const INITIAL_DATA: PortfolioData = {
   name: "조수빈",
-  contact: "010-0000-0000 / pearl8669@naver.com",
+  contact: "pearl8669@naver.com",
   aboutMe: {
     title: "조직 운영 경험을 기반으로 구성원과 조직의 성장을 지원하는 HR 인재",
     points: [
